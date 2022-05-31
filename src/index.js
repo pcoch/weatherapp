@@ -66,7 +66,7 @@ async function getToDayWeather () {
     img.setAttribute("id","pin");
     if (img.id != "pin" || localDiv.children.length == 1) {
     localDiv.prepend(img);
-    img.src = "/dist/assets/location.png";
+    img.src = "/assets/location.png";
     };
 
     //render weather image
@@ -74,41 +74,41 @@ async function getToDayWeather () {
 
     switch (weather) {
         case 'Clear':
-        weatherImg.src = '/dist/assets/weather/sunny.png';
+        weatherImg.src = '/assets/sunny.png';
         break;
 
         case 'Clouds':
         if (weatherDesc == 'overcast clouds') {
-            weatherImg.src = '/dist/assets/weather/overcast-clouds.png';
-        } else weatherImg.src = '/dist/assets/weather/scatteredclouds.png';
+            weatherImg.src = '/assets/overcast-clouds.png';
+        } else weatherImg.src = '/assets/scatteredclouds.png';
         break;
 
         case 'Drizzle':
-         weatherImg.src = '/dist/assets/weather/light-rain.png';
+         weatherImg.src = '/assets/light-rain.png';
         break;
 
         case 'Rain':
-        backgroundweatherImg.src = '/dist/assets/weather/moderate-rain.png';
+        backgroundweatherImg.src = '/assets/moderate-rain.png';
         break;
 
         case 'Thunderstorm':
-        weatherImg.src = '/dist/assets/weather/thunderstorms.png';
+        weatherImg.src = '/assets/thunderstorms.png';
         break;
 
         case 'Tornado':
-            weatherImg.src = '/dist/assets/weather/tornado.png';
+            weatherImg.src = '/assets/tornado.png';
         break;
 
         case 'Haze':
-            weatherImg.src = '/dist/assets/weather/foggy.png';
+            weatherImg.src = '/assets/foggy.png';
         break;
 
         case 'Mist':
-            weatherImg.src = '/dist/assets/weather/foggy.png';
+            weatherImg.src = '/assets/foggy.png';
         break;
 
         case 'Snow':
-            weatherImg.src = '/dist/assets/weather/snow.png';
+            weatherImg.src = '/assets/snow.png';
         break;
     }
 
